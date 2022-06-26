@@ -2,7 +2,7 @@
 module.exports = {
    purge: {
     content: [
-      './src/**/*.{js,jsx,ts,tsx,vue}',
+      './src/**/*.{js,jsx,ts,tsx}',
     ]
    },
   theme: {
