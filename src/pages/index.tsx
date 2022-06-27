@@ -93,9 +93,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-around h-screen py-8 bg-no-repeat bg-cover md:flex-row bg-register">
+        <div className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register">
           <div className="flex flex-col">
-            <h3 className="leading-normal  text-center text-red-600 text-5xl font-[cinzel] font-semibold 	">
+            <h3 className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	">
               PRE-REGISTER
             </h3>
             <div className="flex px-8 py-4 bg-white rounded-[4px]">
@@ -127,8 +127,8 @@ export default function Home() {
               </form>
             </div>
           </div>
-          <div className="flex flex-col">
-            <h3 className="leading-normal  text-center text-white text-5xl font-[cinzel] font-semibold 	">
+          <div className="flex flex-col gap-4 py-4 ">
+            <h3 className="leading-normal  text-center text-white text-3xl md:text-5xl font-[cinzel] font-semibold 	">
               JOIN THE <br /> COMMUNITY
             </h3>
             <div className="flex justify-center gap-6 mt-6 text-3xl">
@@ -168,8 +168,7 @@ export default function Home() {
 
       </div>
          <ItemsContainer/>
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-         text-center pt-2 text-gray-400 text-sm pb-8"
+         <div className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-2 lg:grid-cols-3"
          >
           <span>@ 2022 Appy. All rights reserved</span>
           <span>Terms - Privacy Policy</span>
