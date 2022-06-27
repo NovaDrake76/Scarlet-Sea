@@ -8,7 +8,8 @@ export default function Item({Links, title}){
             Links.map((link) => (
               <li key={link.link}>
                 <a className="text-gray-400 hover:text-teal-400 duration-300
-                text-sm cursor-pointer" href={link.link}>{link.name}</a>
+                text-sm cursor-pointer" href={link.link}>{link.name}
+                </a>
             </li>
             ))
           }
