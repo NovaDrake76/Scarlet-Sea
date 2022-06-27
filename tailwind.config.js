@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         background: "url('../img/background.jpg')",
         register: "url('../img/register.jpg')",
+        sdBackground: "url('../img/wip.jpg')",
       },
     },
   },
