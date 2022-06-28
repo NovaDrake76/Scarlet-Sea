@@ -1,20 +1,11 @@
 import Counter from "../components/counter"
-import {
-  FaAppStore,
-  FaDiscord,
-  FaFacebook,
-  FaGooglePlay,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa"
+import { FaAws, FaDiscord, FaFacebook, FaInstagram, FaPaypal, FaPlaystation, FaTwitter, } from "react-icons/fa"
 import ItemsContainer from "../components/ItemsContainer"
-import Image from "next/image"
-import { Navbar } from "../components/Navbar"
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <div className="flex flex-col ">
         <div className="flex flex-col items-center justify-end h-screen bg-center bg-no-repeat bg-cover md:justify-center md:items-start bg-sdBackground md:bg-background">
           <div className="flex flex-col md:ml-28">
@@ -31,13 +22,17 @@ export default function Home() {
               <Counter></Counter>
             </div>
           </div>
+          <div className=" bottom-10 self-center absolute">
+            <Image src="/arrow.png"
+              alt="placeholder"
+              width={100}
+              height={100}></Image>
+          </div>
         </div>
+        
         <div className="flex flex-col justify-center align-middle bg-[#211F1F] p-12 gap-12">
           <div className="flex flex-col gap-6">
-            <h2
-              id="About"
-              className="leading-normal text-center text-red-600 text-6xl font-[cinzel] font-semibold 	"
-            >
+            <h2 className="leading-normal  text-center text-red-600 text-6xl font-[cinzel] font-semibold 	">
               EXPLORE A NEW WORLD
             </h2>
             <h4 className="text-3xl leading-normal text-center text-white ">
@@ -105,10 +100,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register">
           <div className="flex flex-col">
-            <h3
-              id="Register"
-              className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	"
-            >
+            <h3 className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	">
               PRE-REGISTER
             </h3>
             <div className="flex px-8 py-4 bg-white rounded-[4px]">
@@ -162,26 +154,14 @@ export default function Home() {
         </div>
       </div>
 
-      <footer id="Services" className="text-white bg-gray-900">
-        <ItemsContainer />
-        <div className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-3 lg:grid-cols-3">
+      <footer className="text-white bg-gray-900">
+         <ItemsContainer/>
+         <div className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-2 lg:grid-cols-3"
+         >
           <span>@ 2022 Appy. All rights reserved</span>
           <span>Terms - Privacy Policy</span>
-          <span
-            className=" flex md:justify-center md:items-center justify-center gap-5 md:flex-row
-          "
-          >
-            {/* <FaGooglePlay />
-            <FaAppStore /> */}
-            <Image
-              src="/img/nvidia.png"
-              alt="placeholder"
-              width={500}
-              height={500}
-            ></Image>
-          </span>
-        </div>
-      </footer>
+         </div>
+    </footer>
     </>
   )
 }

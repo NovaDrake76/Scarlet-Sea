@@ -1,30 +1,33 @@
-import React from "react"
-import NumberFormat from "react-number-format"
+import { useState } from "react";
+import React from "react";
+import AnimatedNumber from "react-awesome-animated-number";
+import "react-awesome-animated-number/dist/index.css";
 
-function Counter() {
-  const [counter, setCounter] = React.useState(312278)
+export const Counter = () => {
+  const [number, setNumber] = useState(392013);
+  const [hasComma, setHasComma] = useState(true);
+  const [size, setSize] = useState(28);
+  const [duration, setDuration] = useState(200);
 
   React.useEffect(() => {
-    counter > 0 &&
+    number > 0 &&
       setTimeout(
-        () => setCounter(counter + 1),
+        () => setNumber(number + 1),
         Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000
       )
-  }, [counter])
-
+  }, [number])
   return (
-    <div className="Counter">
-      <div>
-        <NumberFormat
-          value={counter}
-          displayType={"text"}
-          thousandSeparator={true}
-          suffix={" "}
-        />
-        Players already registered
-      </div>
-    </div>
-  )
-}
+    <div className="flex text-[28px] ">
+      <AnimatedNumber
+        value={number}
+        hasComma={hasComma}
+        size={size}
+        duration={duration}
+        className="mt-[6px] mr-2"
+      /> <span> Players already registered</span>
 
-export default Counter
+    </div>
+  );
+};
+
+export default Counter;

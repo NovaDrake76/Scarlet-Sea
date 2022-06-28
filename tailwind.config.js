@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        background: "url('../img/background.jpg')",
-        register: "url('../img/register.jpg')",
-        sdBackground: "url('../img/wip.jpg')",
+        background: "url('/background.jpg')",
+        register: "url('/register.jpg')",
+        sdBackground: "url('/wip.jpg')",
       },
     },
   },
