@@ -2,12 +2,14 @@ import Counter from "../components/counter"
 import { FaAppStore, FaDiscord, FaFacebook, FaGooglePlay, FaInstagram, FaTwitter, } from "react-icons/fa"
 import ItemsContainer from "../components/ItemsContainer"
 import Image from 'next/image'
+import { Navbar } from "../components/Navbar"
 
 
 
 export default function Home() {
   return (
     <>
+    <Navbar/>
       <div className="flex flex-col ">
         <div className="flex flex-col items-center justify-end h-screen bg-center bg-no-repeat bg-cover md:justify-center md:items-start bg-sdBackground md:bg-background">
           <div className="flex flex-col md:ml-28">
@@ -27,7 +29,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center align-middle bg-[#211F1F] p-12 gap-12">
           <div className="flex flex-col gap-6">
-            <h2 className="leading-normal  text-center text-red-600 text-6xl font-[cinzel] font-semibold 	">
+            <h2 id="About" className="leading-normal  text-center text-red-600 text-6xl font-[cinzel] font-semibold 	">
               EXPLORE A NEW WORLD
             </h2>
             <h4 className="text-3xl leading-normal text-center text-white ">
@@ -95,7 +97,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register">
           <div className="flex flex-col">
-            <h3 className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	">
+            <h3 id="Register" className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	">
               PRE-REGISTER
             </h3>
             <div className="flex px-8 py-4 bg-white rounded-[4px]">
@@ -149,7 +151,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="text-white bg-gray-900">
+      <footer id="Services" className="text-white bg-gray-900">
         <div className=" md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
           <h1 className="mb-6 text-3xl font-semibold lg:text-4xl md:mb-0 lg:leading-3-normal md:w-2/5">
             <span className="text-teal-400">Free</span> Until you&apos;re ready
