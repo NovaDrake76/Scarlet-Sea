@@ -1,8 +1,8 @@
 export const PRODUCTS = [
-    {name: 'Drag And Drop', link: '#'},
+    {name: 'Skins and Tournaments', link: '#'},
     {name: 'Games', link: '#'},
     {name: 'PvP Online', link: '#'},
-    {name: 'Easy Content', link: '#'},
+    {name: 'Free Content', link: '#'},
 ];
 
 export const RESOURCES = [

@@ -1,5 +1,5 @@
 import Counter from "../components/counter"
-import { FaAws, FaDiscord, FaFacebook, FaInstagram, FaPaypal, FaPlaystation, FaTwitter, } from "react-icons/fa"
+import { FaAppStore, FaDiscord, FaFacebook, FaGooglePlay, FaInstagram, FaTwitter, } from "react-icons/fa"
 import ItemsContainer from "../components/ItemsContainer"
 import Image from 'next/image'
 
@@ -153,7 +153,7 @@ export default function Home() {
         <div className=" md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
           <h1 className="mb-6 text-3xl font-semibold lg:text-4xl md:mb-0 lg:leading-3-normal md:w-2/5">
             <span className="text-teal-400">Free</span> Until you&apos;re ready
-            to launch
+            to invest
           </h1>
           
           <div>
@@ -168,11 +168,15 @@ export default function Home() {
 
       </div>
          <ItemsContainer/>
-         <div className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-2 lg:grid-cols-3"
+         <div className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-3 lg:grid-cols-3"
          >
           <span>@ 2022 Appy. All rights reserved</span>
           <span>Terms - Privacy Policy</span>
-         </div>
+          <span className=" flex md:justify-center md:items-center justify-center gap-5 md:flex-row
+          "><FaGooglePlay/><FaAppStore/> 
+          </span>
+         
+         </div> 
     </footer>
     </>
   )
