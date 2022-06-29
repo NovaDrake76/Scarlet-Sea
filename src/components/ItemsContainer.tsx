@@ -5,7 +5,7 @@ import { PRODUCTS, RESOURCES, COMPANY, SUPPORT } from "../Data/Data.js"
 export default function ItemsContainer() {
   return (
     <div>
-      <div className="flex flex-col items-center justify-around flex-1 py-4 md:flex-row">
+      <div className="flex flex-col items-center justify-around flex-1 gap-5 py-4 md:flex-row">
         <Image
           src="/nvidia.png"
           alt="nvidia logo"

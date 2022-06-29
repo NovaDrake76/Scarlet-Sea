@@ -11,22 +11,22 @@ export default function About() {
         </div>
         <div className="flex flex-col  justify-center align-middle bg-[#211F1F] p-12 gap-12">
           <h4 className="text-3xl leading-normal text-center text-white ">
-            Scarlet Sea is a community of people who are passionate about the
-            sea.
+            Fate has summoned you to the shores of the Scarlet Sea. In a land
+            hell-bent on your destruction, what will you do to survive?
           </h4>
         </div>
         <div className="flex flex-col items-center justify-around gap-3 p-8 bg-bottom bg-no-repeat md:flex-row bg-bgAbout2">
           <div className="flex flex-col gap-8 md:w-1/2 ">
             <div className="font-[cinzel]">
               <h3 className="text-2xl">THE MISTICAL ISLANDS OF</h3>
-              <h2 className="text-4xl md:text-6xl">VERCECIA</h2>
+              <h2 className="text-4xl md:text-6xl">VERNECIA</h2>
             </div>
             <p className="text-xl">
               For thousands of years the mysterious island of Vernecia has been
-              the source of fantastical legends—and now you`&apos;`ve found it.
-              Shipwrecked, with no supplies or allies, you`&apos;`ll need to
-              make your way in a dangerous world where the fundamental laws of
-              life and death don`&apos;`t apply.
+              the source of fantastical legends—and now you&apos;ve found it.
+              Shipwrecked, with no supplies or allies, you&apos;ll need to make
+              your way in a dangerous world where the fundamental laws of life
+              and death don&apos;t apply.
             </p>
           </div>
           <Image
@@ -45,7 +45,7 @@ export default function About() {
               width={300}
               height={300}
             />
-            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERCENIA</h2>
+            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERNECIA</h2>
             <p className="text-xl">
               A beautiful world awaits you. Venture into deep dark forests,
               climb snow-peaked mountains and marvel at lush valleys. Take to
@@ -59,7 +59,7 @@ export default function About() {
               width={300}
               height={300}
             />
-            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERCENIA</h2>
+            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERNECIA</h2>
             <p className="text-xl">
               A beautiful world awaits you. Venture into deep dark forests,
               climb snow-peaked mountains and marvel at lush valleys. Take to
@@ -67,7 +67,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-around p-8 bg-top bg-no-repeat md:flex-row bg-bgAbout3">
+        <div className="flex flex-col items-center justify-around px-8 py-1 bg-top bg-no-repeat md:py-8 md:flex-row bg-bgAbout3">
           <div className="flex flex-col gap-8 md:w-1/2 ">
             <div className="font-[cinzel]">
               <h3 className="text-2xl">REAL TIME</h3>
@@ -75,8 +75,8 @@ export default function About() {
             </div>
             <p className="text-xl">
               Arm yourself with brutal melee weapons, ranged artillery, or
-              supernatural powers and jump into New World`&apos;`s classless,
-              real-time action combat system. As you progress you`&apos;`ll be
+              supernatural powers and jump into New World&apos;s classless,
+              real-time action combat system. As you progress you&apos;ll be
               able to determine what you want your gameplay experience to be
               like—will you act as a protective shield on the front lines of
               battle? Will you sling spells to support your allies from a safe
@@ -115,7 +115,7 @@ export default function About() {
               width={300}
               height={300}
             />
-            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERCENIA</h2>
+            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERNECIA</h2>
             <p className="text-xl">
               A beautiful world awaits you. Venture into deep dark forests,
               climb snow-peaked mountains and marvel at lush valleys. Take to
@@ -123,7 +123,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-around p-8 bg-center bg-no-repeat bg-cover md:flex-row bg-bgAbout4">
+        <div className="flex flex-col items-center justify-around p-8 bg-fixed bg-center bg-no-repeat bg-cover md:flex-row bg-bgAbout4">
           <div className="flex flex-col gap-8 md:w-1/2">
             <div className="font-[cinzel]">
               <h3 className="text-2xl">GROUP</h3>

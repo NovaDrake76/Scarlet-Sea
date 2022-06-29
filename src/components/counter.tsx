@@ -1,13 +1,13 @@
-import { useState } from "react";
-import React from "react";
-import AnimatedNumber from "react-awesome-animated-number";
-import "react-awesome-animated-number/dist/index.css";
+import { useState } from "react"
+import React from "react"
+import AnimatedNumber from "react-awesome-animated-number"
+import "react-awesome-animated-number/dist/index.css"
 
 export const Counter = () => {
-  const [number, setNumber] = useState(392013);
-  const [hasComma, setHasComma] = useState(true);
-  const [size, setSize] = useState(28);
-  const [duration, setDuration] = useState(200);
+  const [number, setNumber] = useState(392013)
+  const [hasComma, setHasComma] = useState(true)
+  const [size, setSize] = useState(28)
+  const [duration, setDuration] = useState(200)
 
   React.useEffect(() => {
     number > 0 &&
@@ -17,17 +17,17 @@ export const Counter = () => {
       )
   }, [number])
   return (
-    <div className="flex text-[28px] ">
+    <div className="flex flex-col md:flex-row text-[28px]">
       <AnimatedNumber
         value={number}
         hasComma={hasComma}
         size={size}
         duration={duration}
-        className="mt-[6px] mr-2"
-      /> <span> Players already registered</span>
-
+        className="mt-[6px] mr-2 text-center flex justify-center"
+      />
+      <span> Players already registered</span>
     </div>
-  );
-};
+  )
+}
 
-export default Counter;
+export default Counter

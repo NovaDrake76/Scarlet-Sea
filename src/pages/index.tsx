@@ -1,35 +1,46 @@
 import Counter from "../components/counter"
-import { FaAws, FaDiscord, FaFacebook, FaInstagram, FaPaypal, FaPlaystation, FaTwitter, } from "react-icons/fa"
+import {
+  FaAws,
+  FaDiscord,
+  FaFacebook,
+  FaInstagram,
+  FaPaypal,
+  FaPlaystation,
+  FaTwitter,
+} from "react-icons/fa"
 import ItemsContainer from "../components/ItemsContainer"
-import Image from 'next/image'
+import Image from "next/image"
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col ">
         <div className="flex flex-col items-center justify-end h-screen bg-center bg-no-repeat bg-cover md:justify-center md:items-start bg-sdBackground md:bg-background">
-          <div className="flex flex-col md:ml-28">
-            <h1 className="leading-normal text-center text-7xl font-[cinzel] font-semibold 	">
+          <div className="flex flex-col gap-4 md:ml-28">
+            {/* <h1 className="leading-normal text-center text-7xl font-[cinzel] font-semibold 	">
               <span className="text-red-600">SCARLET</span> <br /> SEA
-            </h1>
+            </h1> */}
+            <Image src="/aalo.png" alt="placeholder" width={552} height={275} />
             <div className="flex flex-col items-center gap-4">
-              <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white">
+              <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white hover:bg-black">
                 WATCH TRAILER
               </button>
-              <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white">
+              <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white hover:bg-black">
                 PRE-REGISTER
               </button>
               <Counter></Counter>
             </div>
           </div>
-          <div className=" bottom-10 self-center absolute">
-            <Image src="/arrow.png"
+          <div className="absolute self-center hidden bottom-10 md:flex">
+            <Image
+              src="/arrow.png"
               alt="placeholder"
               width={100}
-              height={100}></Image>
+              height={100}
+            ></Image>
           </div>
         </div>
-        
+
         <div className="flex flex-col justify-center align-middle bg-[#211F1F] p-12 gap-12">
           <div className="flex flex-col gap-6">
             <h2 className="leading-normal  text-center text-red-600 text-6xl font-[cinzel] font-semibold 	">
@@ -41,7 +52,7 @@ export default function Home() {
               <span className="text-red-600"> Rise </span> in power. Conquer the
               world in a exciting Multiplayer PVP Game.
             </h4>
-            <p className="flex self-center max-w-2xl text-lg text-center text-white">
+            <p className="flex self-center max-w-2xl text-xl text-center text-white">
               Explore a thrilling, open-world MMO filled with danger and
               opportunity where you&apos;ll forge a new destiny for yourself as
               an pirate. Endless opportunities to fight, forage, and forge await
@@ -56,7 +67,7 @@ export default function Home() {
               <h3 className="leading-normal  text-center text-red-600 text-5xl font-[cinzel] font-semibold 	">
                 PROVE YOUR SKILLS
               </h3>
-              <p className="max-w-2xl text-lg text-center text-white ">
+              <p className="max-w-2xl text-xl text-center text-white ">
                 Attributes are your character&apos;s core qualities: Strength,
                 Dexterity, Constitution, Intelligence, and Focus. They define
                 your combat strengths and weaknesses, like how much health you
@@ -84,7 +95,7 @@ export default function Home() {
               <h3 className="leading-normal  text-center text-red-600 text-5xl font-[cinzel] font-semibold 	">
                 STAY ALIVE
               </h3>
-              <p className="max-w-2xl text-lg text-center text-white ">
+              <p className="max-w-2xl text-xl text-center text-white ">
                 Sea combat is the pinnacle of PvP in Scarlet sea: epic siege
                 warfare at a massive scale, with teams of attackers and
                 defenders fighting for control and victory. The outcome of each
@@ -99,7 +110,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register">
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-5">
             <h3 className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	">
               PRE-REGISTER
             </h3>
@@ -155,13 +166,12 @@ export default function Home() {
       </div>
 
       <footer className="text-white bg-gray-900">
-         <ItemsContainer/>
-         <div className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-2 lg:grid-cols-3"
-         >
-          <span>@ 2022 Appy. All rights reserved</span>
+        <ItemsContainer />
+        <div className="grid grid-cols-1 gap-10 pt-2 pb-8 text-sm text-center text-gray-400 sm:grid-cols-2 lg:grid-cols-2">
+          <span>LarapioArts 2022 Apply. All rights reserved</span>
           <span>Terms - Privacy Policy</span>
-         </div>
-    </footer>
+        </div>
+      </footer>
     </>
   )
 }
