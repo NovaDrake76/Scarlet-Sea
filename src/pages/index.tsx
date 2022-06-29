@@ -1,11 +1,8 @@
 import Counter from "../components/counter"
 import {
-  FaAws,
   FaDiscord,
   FaFacebook,
   FaInstagram,
-  FaPaypal,
-  FaPlaystation,
   FaTwitter,
 } from "react-icons/fa"
 import ItemsContainer from "../components/ItemsContainer"
@@ -69,10 +66,10 @@ export default function Home() {
               </h3>
               <p className="max-w-2xl text-xl text-center text-white ">
                 Attributes are your character&apos;s core qualities: Strength,
-                Dexterity, Constitution, Intelligence, and Focus. They define
+                Dexterity, Stamina, Intelligence, and Focus. They define
                 your combat strengths and weaknesses, like how much health you
                 have and whether you&apos;re better with melee, ranged, or
-                magical weapons. You can redistribute your attribute points, so
+                heavy weapons. You can redistribute your attribute points, so
                 feel free to experiment until you find the sort of fighting
                 style you like best.
               </p>
@@ -101,7 +98,7 @@ export default function Home() {
                 defenders fighting for control and victory. The outcome of each
                 War determines which company controls contested territory or
                 settlements. Those who control the towns control resources and
-                confer benefits to their fellow faction and company members. If
+                confer benefits to their fellow tripulation and company members. If
                 the company currently controlling a settlement successfully
                 fends off the invaders, they retain control of the settlement.
                 If the attackers are successful, however, they take over.
@@ -109,7 +106,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register">
+        <div className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register" id="register">
           <div className="flex flex-col gap-5">
             <h3 className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	">
               PRE-REGISTER
@@ -136,7 +133,6 @@ export default function Home() {
                     />
                   </div>
                 </div>
-
                 <button className="flex self-center px-6 py-2 mt-4 text-white bg-red-500 rounded-sm justify-self-end">
                   Submit
                 </button>

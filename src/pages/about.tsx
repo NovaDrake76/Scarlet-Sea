@@ -23,7 +23,7 @@ export default function About() {
               <h2 className="text-4xl md:text-6xl">VERNECIA</h2>
             </div>
             <p className="text-xl">
-              For thousands of years the mysterious island of Vernecia has been
+              For thousands of years, the mysterious sea of Vernecia has been
               the source of fantastical legends—and now you&apos;ve found it.
               Shipwrecked, with no supplies or allies, you&apos;ll need to make
               your way in a dangerous world where the fundamental laws of life
@@ -38,7 +38,7 @@ export default function About() {
             layout="intrinsic"
           ></Image>
         </div>
-        <div className="flex flex-col md:flex-row justify-around align-middle bg-[#211F1F] p-8 gap-12">
+        <div className="flex flex-col md:flex-row justify-around align-middle bg-[#211F1F] p-8 gap-12 ">
           <div className="flex flex-col items-center justify-center md:w-1/3">
             <Image
               src="https://images.tcdn.com.br/img/img_prod/25136/pre_venda_31_07_2022_valor_total_r_706_00_10_para_reserva_nendoroid_1687_houshou_marine_hololive_pro_14763_1_ce4763c483a594c9489e3f64085d5570.png"
@@ -47,10 +47,12 @@ export default function About() {
               height={300}
             />
             <h2 className="text-4xl font-[cinzel] p-4 text-center">VERNECIA</h2>
-            <p className="text-xl">
-              A beautiful world awaits you. Venture into deep dark forests,
-              climb snow-peaked mountains and marvel at lush valleys. Take to
-              the seas on a mighty longship, but be wary of sailing too far...
+            <p className="text-xl text-justify">
+              A beautiful world awaits you. Venture into tempestuous waters,
+              marvel at lush valleys and explore rich towns. Build your own
+              hideout in a well protected island, and search for ways to 
+              make money, to buy weapons, to make more money, and buy 
+              better ships, to make more money.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center md:w-1/3">
@@ -60,11 +62,12 @@ export default function About() {
               width={300}
               height={300}
             />
-            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERNECIA</h2>
+            <h2 className="text-4xl font-[cinzel] p-4 text-center">PLAY WITH FRIENDS</h2>
             <p className="text-xl">
-              A beautiful world awaits you. Venture into deep dark forests,
-              climb snow-peaked mountains and marvel at lush valleys. Take to
-              the seas on a mighty longship, but be wary of sailing too far...
+              Make your own tripulation with your friends. You can play with several 
+              classes, so everyone can play their own way.
+              Have a lot of friends? No worries! You can play with as many as you want 
+              with the fleets system. Just make sure to have engough money to buy all these ships.
             </p>
           </div>
         </div>
@@ -76,12 +79,12 @@ export default function About() {
             </div>
             <p className="text-xl">
               Arm yourself with brutal melee weapons, ranged artillery, or
-              supernatural powers and jump into New World&apos;s classless,
+              heavy cannons and jump into Scarlet Sea&apos;s
               real-time action combat system. As you progress you&apos;ll be
               able to determine what you want your gameplay experience to be
               like—will you act as a protective shield on the front lines of
-              battle? Will you sling spells to support your allies from a safe
-              distance? Only you can decide.
+              battle? Will you shoot bullets from far or swing a saber at the core of the battle?
+              Only you can decide.
             </p>
           </div>
           <Image
@@ -104,9 +107,13 @@ export default function About() {
               MARKET FOR PLAYERS BY PLAYERS
             </h2>
             <p className="text-xl">
-              A beautiful world awaits you. Venture into deep dark forests,
-              climb snow-peaked mountains and marvel at lush valleys. Take to
-              the seas on a mighty longship, but be wary of sailing too far...
+              Wanna make some money? Why not sell that shiny sword that you
+              just found on your last trip? The game economy is controled by
+              the players, and every territory has their own market! Wanna be
+              a merchant? Well, you can. But in the world of piracy, everyone
+              got sharp eyes to find a easy target full of valuable goods.
+              You can also buy and sell high-level weapons, ships, and other items 
+              in the Steam Marketplace, or try your luck at the <span className="text-red-600">Red Cat Casino</span>.
             </p>
           </div>
           <div className="flex flex-col items-center justify-center md:w-1/3">
@@ -116,11 +123,15 @@ export default function About() {
               width={300}
               height={300}
             />
-            <h2 className="text-4xl font-[cinzel] p-4 text-center">VERNECIA</h2>
+            <h2 className="text-4xl font-[cinzel] p-4 text-center">MAKE THEM TREMBLE YOUR NAME</h2>
             <p className="text-xl">
-              A beautiful world awaits you. Venture into deep dark forests,
-              climb snow-peaked mountains and marvel at lush valleys. Take to
-              the seas on a mighty longship, but be wary of sailing too far...
+              Wanna make it to the top? Beware; dangerous players have high bounties,
+              and high-level gear. If this isna&apos;t a problem for you, be ready to
+              challenge the entire world in the Battle Seasons. Who know what kind
+              of rewards you might win? Remember, the rarer the item, the more
+              expensive it gets, so you migh wanna get some of these <span className="text-yellow-300"> World-Class</span> gear
+              from the Season Rewards. You can also get some Ultra-Rare items
+              from the Casino.
             </p>
           </div>
         </div>
