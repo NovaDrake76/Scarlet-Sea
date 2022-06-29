@@ -23,10 +23,10 @@ export default function About() {
             </div>
             <p className="text-xl">
               For thousands of years the mysterious island of Vernecia has been
-              the source of fantastical legends—and now you’ve found it.
-              Shipwrecked, with no supplies or allies, you’ll need to make your
-              way in a dangerous world where the fundamental laws of life and
-              death don’t apply.
+              the source of fantastical legends—and now you`&apos;`ve found it.
+              Shipwrecked, with no supplies or allies, you`&apos;`ll need to
+              make your way in a dangerous world where the fundamental laws of
+              life and death don`&apos;`t apply.
             </p>
           </div>
           <Image
@@ -75,12 +75,12 @@ export default function About() {
             </div>
             <p className="text-xl">
               Arm yourself with brutal melee weapons, ranged artillery, or
-              supernatural powers and jump into New World's classless, real-time
-              action combat system. As you progress you'll be able to determine
-              what you want your gameplay experience to be like—will you act as
-              a protective shield on the front lines of battle? Will you sling
-              spells to support your allies from a safe distance? Only you can
-              decide.
+              supernatural powers and jump into New World`&apos;`s classless,
+              real-time action combat system. As you progress you`&apos;`ll be
+              able to determine what you want your gameplay experience to be
+              like—will you act as a protective shield on the front lines of
+              battle? Will you sling spells to support your allies from a safe
+              distance? Only you can decide.
             </p>
           </div>
           <Image

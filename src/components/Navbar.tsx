@@ -1,8 +1,10 @@
+import Link from "next/link"
+
 export function Navbar() {
   return (
     <>
       <nav className="bg-gray-800">
-        <div className="px-2 mx-auto  sm:px-6 lg:px-8">
+        <div className="px-2 mx-auto sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* <!-- Mobile menu button--> */}
@@ -67,36 +69,36 @@ export function Navbar() {
               <div className="hidden sm:block sm:ml-6">
                 <div className="flex space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                  <a
+                  <Link
                     href="/"
-                    className="px-3 py-2 text-sm font-medium text-white rounded-md  hover:text-white"
+                    className="px-3 py-2 text-sm font-medium text-white rounded-md hover:text-white"
                   >
                     HOME
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="about"
                     className="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white"
                   >
                     ABOUT
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href="#Services"
                     className="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white"
                   >
                     TERMS & CONDITIONS
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <a
+              <Link
                 href="#Register"
                 className="px-3 py-2 text-sm font-medium text-red-500 rounded-md hover:bg-gray-700 hover:text-white"
               >
                 PRE-REGISTER NOW
-              </a>
+              </Link>
 
               {/* <!-- Profile dropdown --> */}
 
@@ -138,34 +140,34 @@ export function Navbar() {
 
         <div className="sm:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a
+            <Link
               href="#"
               className="block px-3 py-2 text-base font-medium text-white bg-gray-900 rounded-md"
               aria-current="page"
             >
               Home
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#About"
               className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
             >
               About
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#Register"
               className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
             >
               Register
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="#Services"
               className="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white"
             >
               Terms & Services
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
