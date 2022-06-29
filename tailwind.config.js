@@ -7,9 +7,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        background: "url('/background.jpg')",
-        register: "url('/register.jpg')",
-        sdBackground: "url('/wip.jpg')",
+        background: "url('/background.webp')",
+        register: "url('/register.webp')",
+        sdBackground: "url('/wip.webp')",
+        bgAbout: "url('/bgAbout.webp')",
+        bgAbout2: "url('/bgAbout2.webp')",
+        bgAbout3: "url('/bgAbout3.webp')",
+        bgAbout4: "url('/bgAbout4.webp')",
       },
     },
   },
