@@ -1,7 +1,19 @@
 import Link from "next/link"
+import { useState } from "react"
 
 export function Navbar() {
+ 
+  
+  const [active, setActive] = useState("nav__menu")
+  const navToogle = () => {
+    active === "nav__menu" 
+    ? setActive("nav__menu nav__active") 
+    : setActive("nav__men");
+
+  };
+   
   return (
+
     <>
       <nav className="bg-gray-800">
         <div className="px-2 mx-auto sm:px-6 lg:px-8">
@@ -108,6 +120,7 @@ export function Navbar() {
                     id="user-menu-button"
                     aria-expanded="false"
                     aria-haspopup="true"
+                    onClick={navToogle}
                   >
                     <span className="sr-only">Open user menu</span>
                     {/* <img className="w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> */}
