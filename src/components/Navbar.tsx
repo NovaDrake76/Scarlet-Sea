@@ -95,6 +95,7 @@ export function Navbar() {
 
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href="https://docs.google.com/document/d/1XT0fQcI7XrKEfZeERzsnI0JtlY5jqGZVABEx3VUIeC0/edit"
                     className="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white"
                   >
@@ -165,6 +166,7 @@ export function Navbar() {
 
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://docs.google.com/document/d/1XT0fQcI7XrKEfZeERzsnI0JtlY5jqGZVABEx3VUIeC0/edit"
               className="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white"
             >
