@@ -15,7 +15,7 @@ export default function About() {
             hell-bent on your destruction, what will you do to survive?
           </h4>
         </div>
-        <div className="flex flex-col items-center justify-around gap-3 p-8 bg-bottom bg-no-repeat md:flex-row bg-bgAbout2">
+        <div className="flex flex-col items-center justify-around gap-3 p-8 bg-bottom bg-no-repeat bg-cover md:flex-row bg-bgAbout2 ">
           <div className="flex flex-col gap-8 md:w-1/2 ">
             <div className="font-[cinzel]">
               <h3 className="text-2xl">THE MISTICAL ISLANDS OF</h3>
@@ -67,7 +67,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-around px-8 py-1 bg-top bg-no-repeat md:py-8 md:flex-row bg-bgAbout3">
+        <div className="flex flex-col items-center justify-around px-8 py-1 bg-top bg-no-repeat bg-cover md:py-8 md:flex-row bg-bgAbout3">
           <div className="flex flex-col gap-8 md:w-1/2 ">
             <div className="font-[cinzel]">
               <h3 className="text-2xl">REAL TIME</h3>
