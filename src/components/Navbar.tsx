@@ -21,13 +21,15 @@ export function Navbar() {
               rel="noreferrer"
               target="_blank"
               href="https://docs.google.com/document/d/1XT0fQcI7XrKEfZeERzsnI0JtlY5jqGZVABEx3VUIeC0/edit"
-            ></Link>
+            >
+              <a>GAME DESIGN</a>
+            </Link>
           </div>
         </div>
         <div className="text-center hidden md:flex">
-          <a href="/#register" className="text-red-600">
-            PRE-REGISTER NOW
-          </a>
+          <Link href="/#register">
+            <a className="text-red-600">PRE-REGISTER NOW</a>
+          </Link>
         </div>
       </nav>
     </>
