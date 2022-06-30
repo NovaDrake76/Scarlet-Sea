@@ -17,7 +17,7 @@ export const Counter = () => {
       )
   }, [number])
   return (
-    <div className="flex flex-col md:flex-row text-[28px]">
+    <div className="flex flex-col md:flex-row text-[28px] text-white md:text-black">
       <AnimatedNumber
         value={number}
         hasComma={hasComma}

@@ -20,7 +20,7 @@ export default function Home() {
                   rel="noreferrer"
                   target="_blank"
                   href="https://www.youtube.com/watch?v=iGHPob4mgnw"
-                  className="p-1 font-medium text-white rounded-md text-xl hover:bg-gray-700 font-[cinzel]"
+                  className="p-1 font-medium text-white rounded-md text-xl font-[cinzel]"
                 >
                   WATCH TRAILER
                 </a>
