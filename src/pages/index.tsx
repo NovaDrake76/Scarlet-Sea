@@ -3,6 +3,7 @@ import { FaDiscord, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 import ItemsContainer from "../components/ItemsContainer"
 import Image from "next/image"
 import Link from "next/link"
+import useEffect from "react"
 
 export default function Home() {
   return (
