@@ -1,12 +1,8 @@
 import Counter from "../components/counter"
-import {
-  FaDiscord,
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa"
+import { FaDiscord, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"
 import ItemsContainer from "../components/ItemsContainer"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -23,7 +19,9 @@ export default function Home() {
                 WATCH TRAILER
               </button>
               <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white hover:bg-black">
-                PRE-REGISTER
+                <Link href="/#register">
+                  <a>PRE-REGISTER</a>
+                </Link>
               </button>
               <Counter></Counter>
             </div>
@@ -66,27 +64,29 @@ export default function Home() {
               </h3>
               <p className="max-w-2xl text-xl text-center text-white ">
                 Attributes are your character&apos;s core qualities: Strength,
-                Dexterity, Stamina, Intelligence, and Focus. They define
-                your combat strengths and weaknesses, like how much health you
-                have and whether you&apos;re better with melee, ranged, or
-                heavy weapons. You can redistribute your attribute points, so
-                feel free to experiment until you find the sort of fighting
-                style you like best.
+                Dexterity, Stamina, Intelligence, and Focus. They define your
+                combat strengths and weaknesses, like how much health you have
+                and whether you&apos;re better with melee, ranged, or heavy
+                weapons. You can redistribute your attribute points, so feel
+                free to experiment until you find the sort of fighting style you
+                like best.
               </p>
             </div>
             <Image
-              src="https://images.tcdn.com.br/img/img_prod/25136/pre_venda_31_07_2022_valor_total_r_706_00_10_para_reserva_nendoroid_1687_houshou_marine_hololive_pro_14763_1_ce4763c483a594c9489e3f64085d5570.png"
-              alt="placeholder"
+              src="/prof.webp"
+              alt="marine with pistol"
               width={500}
               height={500}
+              className="rounded"
             />
           </div>
           <div className="flex flex-col-reverse items-center justify-around gap-6 md:flex-row">
             <Image
-              src="https://images.tcdn.com.br/img/img_prod/25136/pre_venda_31_07_2022_valor_total_r_706_00_10_para_reserva_nendoroid_1687_houshou_marine_hololive_pro_14763_1_ce4763c483a594c9489e3f64085d5570.png"
-              alt="placeholder"
+              src="/ship.webp"
+              alt="warship"
               width={500}
               height={500}
+              className="rounded"
             />
             <div>
               <h3 className="leading-normal  text-center text-red-600 text-5xl font-[cinzel] font-semibold 	">
@@ -98,15 +98,18 @@ export default function Home() {
                 defenders fighting for control and victory. The outcome of each
                 War determines which company controls contested territory or
                 settlements. Those who control the towns control resources and
-                confer benefits to their fellow tripulation and company members. If
-                the company currently controlling a settlement successfully
+                confer benefits to their fellow tripulation and company members.
+                If the company currently controlling a settlement successfully
                 fends off the invaders, they retain control of the settlement.
                 If the attackers are successful, however, they take over.
               </p>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register" id="register">
+        <div
+          className="flex flex-col justify-around h-screen md:h-[70vh] py-12  px-8 bg-no-repeat bg-cover md:flex-row bg-register"
+          id="register"
+        >
           <div className="flex flex-col gap-5">
             <h3 className="leading-normal text-center text-red-600 text-3xl md:text-5xl font-[cinzel] font-semibold 	">
               PRE-REGISTER

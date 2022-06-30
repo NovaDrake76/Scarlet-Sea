@@ -7,30 +7,31 @@ export function Navbar() {
         <div>
           <div className="flex gap-4 md:gap-10 ">
             <Link href="/">
-              <a className="text-sm font-medium text-white rounded-md hover:bg-gray-700">
+              <a className="p-1 text-sm font-medium text-white rounded-md hover:bg-gray-700">
                 HOME
               </a>
             </Link>
 
             <Link href="about">
-              <a className="text-sm font-medium text-white rounded-md  hover:bg-gray-700">
+              <a className="p-1 text-sm font-medium text-white rounded-md hover:bg-gray-700">
                 ABOUT
               </a>
             </Link>
-            <Link
+            <a
               rel="noreferrer"
               target="_blank"
               href="https://docs.google.com/document/d/1XT0fQcI7XrKEfZeERzsnI0JtlY5jqGZVABEx3VUIeC0/edit"
+              className="p-1 text-sm font-medium text-white rounded-md hover:bg-gray-700"
             >
-              <a className="text-sm font-medium text-white rounded-md  hover:bg-gray-700">
-                GAME DESIGN
-              </a>
-            </Link>
+              GAME DESIGN
+            </a>
           </div>
         </div>
         <div className="hidden text-center md:flex">
           <Link href="/#register">
-            <a className="text-red-600">PRE-REGISTER NOW</a>
+            <a className="p-1 text-sm font-medium text-red-600 rounded-md hover:bg-gray-700">
+              PRE-REGISTER NOW
+            </a>
           </Link>
         </div>
       </nav>
