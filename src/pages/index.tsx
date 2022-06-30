@@ -16,13 +16,16 @@ export default function Home() {
             <Image src="/aalo.png" alt="placeholder" width={552} height={275} />
             <div className="flex flex-col items-center gap-4">
               <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white hover:bg-black">
-                WATCH TRAILER
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=iGHPob4mgnw"
+                  className="p-1 text-sm font-medium text-white rounded-md hover:bg-gray-700"
+                >
+                  WATCH TRAILER
+                </a>
               </button>
-              <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white hover:bg-black">
-                <Link href="/#register">
-                  <a>PRE-REGISTER</a>
-                </Link>
-              </button>
+              <button className="w-2/3 p-2 bg-[#211F1FBD]/50 font-[cinzel] rounded-sm font-medium text-xl text-white hover:bg-black"></button>
               <Counter></Counter>
             </div>
           </div>
